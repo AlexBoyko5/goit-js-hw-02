@@ -1,13 +1,13 @@
 
 function checkForSpam(message) {
-  // Перетворюємо рядок на нижній регістр для порівняння однакових/приведених значень
+  //* Перетворюємо рядок на нижній регістр для порівняння однакових/приведених значень/
   const lowerCaseMessage = message.toLowerCase();
 
-  // Перевіряємо наявність заборонених слів у рядку
+  //* Перевіряємо наявність заборонених слів у рядку/
   if (lowerCaseMessage.includes('spam') || lowerCaseMessage.includes('sale')) {
-    return true; // Є заборонене слово
+    return true; //* Є заборонене слово/
   } else {
-    return false; // Немає заборонених слів
+    return false; //* Немає заборонених слів/
   }
   }
 console.log(checkForSpam("Latest technology news")); // false

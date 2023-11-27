@@ -1,8 +1,8 @@
-function getShippingCost(country) { /*функція "getShippingCost", приймає параметр (country) */
+function getShippingCost(country) { //*функція "getShippingCost", приймає параметр (country) */
 
-    switch (country) { /* Використовуємо оператор "switch" для перевірки значення (country)*/
+    switch (country) { //* Використовуємо оператор "switch" для перевірки значення (country)*/
         case "China":
-            /* Якщо країна - Китай, встановлюємо повідомлення про вартість доставки (100  credits) і т.д.*/
+            //* Якщо країна - Китай, встановлюємо повідомлення про вартість доставки (100  credits) і т.д.*/
             return "Shipping to China will cost 100  credits";
             break;
         case "Chile":
@@ -15,7 +15,7 @@ function getShippingCost(country) { /*функція "getShippingCost", прий
             return "Shipping to Jamaica will cost 120 credits";
             break;
         default:
-            /*Якщо країна не входить в список - повідомлення про неможливість доставки */
+            //*Якщо країна не входить в список - повідомлення про неможливість доставки */
             return "Sorry, there is no delivery to your country";
     }
 }
